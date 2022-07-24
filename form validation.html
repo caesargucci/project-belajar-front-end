@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        width: 600px;
+        padding: 20px;
+        color: green;
+        border-color: blueviolet;
+      }
+      form div {
+        margin: 10px;
+      }
+      label {
+        display: block;
+        text-transform: uppercase;
+      }
+      button {
+        display: flex;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="index.html" method="post" autocomplete="off">
+      <div>
+        <label for="nama">Masukan Nama</label>
+        <input type="text" name="nama" id="nama" autofocus required minlength="3" maxlength="6" />
+      </div>
+      <div>
+        <label for="email">Masukan Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="website">Masukan URL Anda</label>
+        <input type="url" name="website" id="website" />
+      </div>
+      <div>
+        <label for="Nomor Hp">Masukan NoHp</label>
+        <input type="tel" name="nohp" id="nohp" />
+      </div>
+      <div>
+        <label for="Angka Anda">Masukan Angka</label>
+        <input type="number" name="angka" id="angka" min="2" max="5" />
+      </div>
+      <div>
+        <label for="Angka Anda">Masukan Jarak</label>
+        <input type="range" name="angka" id="angka" />
+      </div>
+      <div>
+        <label for="Masukan Tanggal">Masukan Tanggal</label>
+        <input type="date" name="angka" id="angka" />
+      </div>
+      <div>
+        <label for="Pilih warna">Masukan Pilih warna anda</label>
+        <input type="color" name="angka" id="angka" />
+      </div>
+
+      <div>
+        <button type="submit">Kirim</button>
+      </div>
+    </form>
+  </body>
+</html>
